@@ -352,6 +352,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    padding: 50px 25px !important;
 }
 
 .social a {
@@ -596,12 +597,16 @@
 
     /* GLOBAL */
     .container {
-        padding: 25px;
+        padding: 100px 25px 0 25px!important;
     }
 
 
     .info .title {
         font-size: 1.5rem;
+    }
+
+    .info .title:not(.center) {
+        margin-left: 50px!important;
     }
 
     .info .title.bg::before {
