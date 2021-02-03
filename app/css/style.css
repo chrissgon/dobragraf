@@ -330,8 +330,6 @@
 
 /* CLIENTES */
 .clientes {
-    width: 100%;
-    display: flex;
     flex-direction: column;
     margin-bottom: 200px;
 }
@@ -348,11 +346,72 @@
 }
 
 .clientes .carousel img {
-    outline: none!important;
+    outline: none !important;
     filter: saturate(0);
     margin: 0 25px;
 }
 
+/* CONTATO */
+.social {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.social a {
+    color: #74A7CC;
+    font-size: 30px;
+    margin: 0 50px;
+    transition: .2s all;
+}
+
+.social a:hover {
+    color: #002742;
+    transform: translateY(-5px);
+}
+
+.contato {
+    position: relative;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: linear-gradient(0deg, rgba(0, 39, 66, 1) 47%, rgba(0, 39, 66, 0) 52%);
+    padding: 200px 0 50px 0 !important;
+}
+
+.contato .bg-footer {
+    width: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.contato .inner {
+    min-width: 300px;
+}
+
+.contato .inner div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato .inner .subtitle {
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.contato .inner a {
+    line-height: 0;
+    margin-bottom: 35px;
+}
+
+.contato .inner a {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
 
 /* GLOBAL */
 .spacing {
@@ -439,6 +498,12 @@
     .home .illustration img {
         width: 400px;
         transform: translate(50px, -25px);
+    }
+
+    /* CONTATO */
+    .contato {
+        background: linear-gradient(0deg, rgba(0, 39, 66, 1) 86%, rgba(0, 39, 66, 0) 87%);
+
     }
 }
 
@@ -559,6 +624,26 @@
         font-size: 1rem;
     }
 
+    /* CONTATO */
+    .social {
+        padding: 0 25px !important;
+    }
+
+    .social a {
+        margin: 0 25px;
+    }
+
+    .contato {
+        padding-top: 75px !important;
+    }
+
+    .contato .inner {
+        margin-bottom: 50px;
+    }
+
+    .contato .subtitle {
+        text-align: center;
+    }
 }
 
 @media(max-width: 400px) {
