@@ -334,11 +334,6 @@
     margin-bottom: 200px;
 }
 
-/* info */
-.clientes .info .title {
-    margin-left: 50px;
-}
-
 /* carousel */
 .clientes .carousel {
     width: 100%;
@@ -415,13 +410,13 @@
 
 /* GLOBAL */
 .spacing {
-    margin: 75px 0;
+    margin: 75px 0!important;
 }
 
 .container {
     width: 100%;
     display: flex;
-    padding: 25px 50px;
+    padding: 100px 50px 0 50px;
     overflow: hidden;
 }
 
