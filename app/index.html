@@ -20,6 +20,7 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css" />
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
 
 </head>
 
@@ -32,7 +33,7 @@
     </a>
 
     <!-- MAV -->
-    <nav class="container nav">
+    <nav class="my-container nav">
         <!-- logo -->
         <figure class="logo">
             <img src="img/logo.svg" alt="Logo da Dobragraf">
@@ -68,7 +69,7 @@
     </div>
 
     <!-- HOME -->
-    <section class="container home" id="home">
+    <section class="my-container home" id="home">
         <!-- main -->
         <main class="main">
             <h1 class="title">Transformando <span>o papelão</span> <br> <span>em sonhos</span></h1>
@@ -88,7 +89,7 @@
     </section>
 
     <!-- SOBRE -->
-    <section class="container sobre" id="sobre">
+    <section class="my-container sobre" id="sobre">
         <!-- info -->
         <article class="info">
 
@@ -111,7 +112,7 @@
 
 
     <!-- MUDANCA -->
-    <section class="container mudanca">
+    <section class="my-container mudanca">
 
         <img class="bolha" src="img/bg-bolhas.svg">
 
@@ -133,7 +134,7 @@
 
 
     <!-- SERVICOS -->
-    <section class="container servicos" id="servicos">
+    <section class="my-container servicos" id="servicos">
 
         <!-- info -->
         <header class="info">
@@ -191,7 +192,7 @@
     </section>
 
     <!-- CLIENTE -->
-    <section class="container clientes" id="clientes">
+    <section class="my-container clientes" id="clientes">
         <!-- info -->
         <header class="info">
             <h3 class="title bg">Clientes</h3>
@@ -217,16 +218,67 @@
     </section>
 
     <!-- ORCAMENTO -->
-    <section class="container orcamento" id="orcamento">
+    <section class="my-container orcamento" id="orcamento">
         <!-- info -->
         <header class="info">
             <h3 class="title bg">Orçamento</h3>
+            <p class="subtitle">Realize seu orçamento com a gente!</p>
+            <!-- <p>Responda o questionário abaixo</p> -->
         </header>
+        <!-- form -->
+        <form id="form-orcamento" class="form row align-items-center">
+            <div class="col-auto">
+                <select class="form-select" name="servico">
+                    <option value="" selected disabled>Tipo de serviço</option>
+                    <option value="lombada">Lombada Quadradra</option>
+                    <option value="capadura">Capa Dura</option>
+                    <option value="capaflexivel">Capa Flexível</option>
+                    <option value="moleskine">Moleskine</option>
+                    <option value="empastamento">Empastamentos</option>
+                </select>
+            </div>
+
+            <div class="col-auto tipo-lombada visually-hidden">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipo-lombada" id="colado">
+                    <label class="form-check-label" for="colado">
+                        Colado
+                    </label>
+                </div>
+            </div>
+            <div class="col-auto tipo-lombada visually-hidden">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipo-lombada" id="costurado">
+                    <label class="form-check-label" for="costurado">
+                        Costurado
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-auto tipo-lombada visually-hidden">
+                <select class="form-select" name="capa-opcoes">
+                    <option value="pur">PUR</option>
+                    <option value="hotmelt">Hotmelt</option>
+                </select>
+            </div>
+
+            <div class="col-auto">
+                <select class="form-select" name="capa-orelha">
+                    <option value="" selected disabled>Tipo de capa</option>
+                    <option value="S">Com orelha</option>
+                    <option value="N">Sem orelha</option>
+                </select>
+            </div>
+
+            <div class="col-auto">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+        </form>
     </section>
 
 
     <!-- CONTATO -->
-    <div class="container social">
+    <div class="my-container social">
         <a href="">
             <i class="fab fa-facebook"></i>
         </a>
@@ -240,7 +292,7 @@
             <i class="far fa-envelope"></i>
         </a>
     </div>
-    <footer class="container contato" id="contato">
+    <footer class="my-container contato" id="contato">
         <img src="img/bg-footer.svg" class="bg-footer">
 
         <!-- guias -->
@@ -279,6 +331,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

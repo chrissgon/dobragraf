@@ -10,7 +10,7 @@
     position: fixed;
     right: 0;
     bottom: 0;
-    color: white;
+    color: white!important;
     border-radius: 100%;
     background: #25d366;
     transform: translate(-50px, -50px);
@@ -25,7 +25,6 @@
     text-align: center;
     background: #25d366;
     border-radius: 5px;
-    /* animation: alert 1s ease infinite; */
     padding: 5px 0;
 }
 
@@ -57,7 +56,7 @@
     position: absolute;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 50px!important;
+    padding: 25px 50px !important;
 }
 
 /* logo */
@@ -72,13 +71,13 @@
 }
 
 .nav .tabs .tab {
-    color: var(--darkBlue);
+    color: var(--darkBlue)!important;
     font-weight: 500;
     padding: 5px 15px;
 }
 
 .nav .tabs .tab.strong {
-    color: white;
+    color: white!important;
     background: var(--darkBlue);
     border-radius: 100px;
     padding: 12px 35px;
@@ -208,7 +207,7 @@
 }
 
 .home .main .buttons .button:nth-child(2) {
-    color: var(--darkBlue);
+    color: var(--darkBlue)!important;
     background: transparent;
     border: 2px solid var(--darkBlue);
     margin-left: 50px;
@@ -347,6 +346,20 @@
     margin: 0 25px;
 }
 
+/* ORCAMENTO */
+.orcamento{
+    flex-direction: column;
+}
+.orcamento .subtitle{
+    font-size: 1.3rem;
+}
+
+.orcamento .form{
+    border: 1px solid var(--lightBlue);
+    border-radius: 15px;
+    padding: 25px;
+}
+
 /* CONTATO */
 .social {
     flex-wrap: wrap;
@@ -356,14 +369,14 @@
 }
 
 .social a {
-    color: #74A7CC;
+    color: #74A7CC!important;
     font-size: 30px;
     margin: 0 50px;
     transition: .2s all;
 }
 
 .social a:hover {
-    color: #002742;
+    color: #002742!important;
     transform: translateY(-5px);
 }
 
@@ -412,13 +425,13 @@
 
 /* GLOBAL */
 .spacing {
-    margin: 75px 0!important;
+    margin: 75px 0 !important;
 }
 
-.container {
+.my-container {
     width: 100%;
     display: flex;
-    padding: 100px 50px 0 50px;
+    padding: 100px 50px 25px 50px;
     overflow: hidden;
 }
 
@@ -596,8 +609,8 @@
     }
 
     /* GLOBAL */
-    .container {
-        padding: 100px 25px 0 25px!important;
+    .my-container {
+        padding: 100px 25px 0 25px !important;
     }
 
 
@@ -606,7 +619,7 @@
     }
 
     .info .title:not(.center) {
-        margin-left: 50px!important;
+        margin-left: 50px !important;
     }
 
     .info .title.bg::before {

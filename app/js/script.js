@@ -1,8 +1,8 @@
-$(".mobile .btn").click(function() {
+$(".mobile .btn").click(function () {
   $(".mobile").toggleClass("active");
 });
 
-$(document).click(function(e) {
+$(document).click(function (e) {
   let btn = $(".mobile .btn");
   if (!btn.is(e.target) && btn.has(e.target).length === 0) {
     $(".mobile").removeClass("active");
@@ -20,21 +20,37 @@ $(".carousel").slick({
       settings: {
         slidesToShow: 4,
         slidesToScroll: 4,
-        
-      }
+      },
     },
     {
       breakpoint: 600,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
-      }
+        slidesToScroll: 2,
+      },
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
-      }
-    }]
+        slidesToScroll: 1,
+      },
+    },
+  ],
+});
+
+$("select[name=servico]").change(function () {
+  const servico = $(this).val();
+
+  if (servico === "lombada") {
+    $(".tipo-lombada").removeClass("visually-hidden");
+  } else {
+    $(".tipo-lombada").addClass("visually-hidden");
+  }
+});
+
+$("#form-orcamento").submit(function (e) {
+  e.preventDefault();
+
+  console.log($(this).serialize());
 });

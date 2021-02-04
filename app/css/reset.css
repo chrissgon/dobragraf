@@ -25,5 +25,11 @@ body {
 :root {
     --darkBlue: #002742;
     --blue: #74A7CC;
+    --lightBlue: #74a7cc27;
     --secondaryColor: #56829E;
+}
+
+a{
+    color: white!important;
+    text-decoration: none!important;
 }
