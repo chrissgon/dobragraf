@@ -331,7 +331,6 @@
 /* CLIENTES */
 .clientes {
     flex-direction: column;
-    margin-bottom: 200px;
 }
 
 /* carousel */
@@ -355,9 +354,21 @@
 }
 
 .orcamento .form{
+    flex-wrap: wrap!important;
     border: 1px solid var(--lightBlue);
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 25px;
+}
+
+.orcamento .col-auto:not(.checkbox){
+    min-width: 200px;
+}
+
+.orcamento .sm{
+    min-width: 250px!important;
+}
+.orcamento .md{
+    min-width: 300px!important;
 }
 
 /* CONTATO */
@@ -641,6 +652,7 @@
     /* CONTATO */
     .social {
         padding: 0 25px !important;
+        margin: 50px 0;
     }
 
     .social a {

@@ -21,6 +21,7 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 
 </head>
 
@@ -227,26 +228,28 @@
         </header>
         <!-- form -->
         <form id="form-orcamento" class="form row align-items-center">
-            <div class="col-auto">
-                <select class="form-select" name="servico">
-                    <option value="" selected disabled>Tipo de serviço</option>
-                    <option value="lombada">Lombada Quadradra</option>
-                    <option value="capadura">Capa Dura</option>
-                    <option value="capaflexivel">Capa Flexível</option>
-                    <option value="moleskine">Moleskine</option>
-                    <option value="empastamento">Empastamentos</option>
-                </select>
+            <div class="col-auto col-sm-3 mb-3">
+                <div class="form-floating">
+                    <select class="form-select" name="servico" id="select-servico">
+                        <option value="lombada" selected>Lombada Quadradra</option>
+                        <option value="capadura">Capa Dura</option>
+                        <option value="capaflexivel">Capa Flexível</option>
+                        <option value="moleskine">Moleskine</option>
+                        <option value="empastamento">Empastamentos</option>
+                    </select>
+                    <label for="select-servico">Tipo de Serviço</label>
+                </div>
             </div>
 
-            <div class="col-auto tipo-lombada visually-hidden">
+            <div class="col-auto checkbox mb-3 tipo-lombada">
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="tipo-lombada" id="colado">
+                    <input class="form-check-input" type="radio" name="tipo-lombada" id="colado" checked>
                     <label class="form-check-label" for="colado">
                         Colado
                     </label>
                 </div>
             </div>
-            <div class="col-auto tipo-lombada visually-hidden">
+            <div class="col-auto checkbox mb-3 tipo-lombada">
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="tipo-lombada" id="costurado">
                     <label class="form-check-label" for="costurado">
@@ -255,23 +258,133 @@
                 </div>
             </div>
 
-            <div class="col-auto tipo-lombada visually-hidden">
-                <select class="form-select" name="capa-opcoes">
-                    <option value="pur">PUR</option>
-                    <option value="hotmelt">Hotmelt</option>
-                </select>
+            <div class="col-auto mb-3 tipo-lombada">
+                <div class="form-floating">
+                    <select class="form-select" name="capa-opcoes" id="capa-opcoes">
+                        <option value="pur">PUR</option>
+                        <option value="hotmelt">Hotmelt</option>
+                    </select>
+                    <label for="capa-opcoes">Opções de capa</label>
+                </div>
             </div>
 
-            <div class="col-auto">
-                <select class="form-select" name="capa-orelha">
-                    <option value="" selected disabled>Tipo de capa</option>
-                    <option value="S">Com orelha</option>
-                    <option value="N">Sem orelha</option>
-                </select>
+            <div class="col-auto mb-3">
+                <div class="form-floating">
+                    <select class="form-select" name="capa-orelha" id="capa-orelha">
+                        <option value="S">Com orelha</option>
+                        <option value="N">Sem orelha</option>
+                    </select>
+                    <label for="capa-orelha">Tipo de capa</label>
+                </div>
             </div>
 
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary">Enviar</button>
+            <div class="col-auto mb-3">
+                <div class="form-floating">
+                    <input class="form-control" type="number" name="miolo-paginas" id="miolo-paginas"
+                        placeholder="Páginas por miolo" min="1">
+                    <label for="miolo-paginas">Páginas do miolo</label>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="form-floating">
+                    <select class="form-select" name="miolo-formato" id="miolo-formato">
+                        <option value="fechado">Miolo fechado</option>
+                        <option value="aberto">Miolo aberto</option>
+                    </select>
+                    <label for="miolo-fechado">Formato do miolo</label>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3">
+                <div class="form-floating">
+                    <input class="form-control" type="number" name="tiragem" id="tiragem"
+                        placeholder="Quantidade de peças" min="1">
+                    <label for="tiragem">Número de peças</label>
+                </div>
+            </div>
+
+            <div class="col-auto md mb-3">
+                <div class="form-floating">
+                    <input class="form-control" type="text" name="capa-gramatura" id="capa-gramatura"
+                        placeholder="Quantidade de peças" min="1">
+                    <label for="capa-gramatura">Papel e gramatura da capa</label>
+                </div>
+            </div>
+
+            <div class="col-auto md mb-3">
+                <div class="form-floating">
+                    <input class="form-control" type="text" name="miolo-gramatura" id="miolo-gramatura"
+                        placeholder="Quantidade de peças" min="1">
+                    <label for="miolo-gramatura">Papel e gramatura do miolo</label>
+                </div>
+            </div>
+
+            <div class="col-auto sm mb-3">
+                <div class="form-floating">
+                    <select class="form-select" name="form-impressao" id="form-impressao">
+                        <option value="S">Sem impressão</option>
+                        <option value="N">Digital</option>
+                    </select>
+                    <label for="form-impressao">Forma de impressão</label>
+                </div>
+            </div>
+
+            <div class="col-auto checkbox mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipo-folha" id="folha-por-folha">
+                    <label class="form-check-label" for="folha-por-folha">
+                        Folha por folha
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-auto checkbox mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="tipo-folha" id="quatro-paginas">
+                    <label class="form-check-label" for="quatro-paginas">
+                        Caderno de 4 páginas
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-auto checkbox mb-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" name="offset" id="offset">
+                    <label class="form-check-label" for="offset">
+                        Offset
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3 offset visually-hidden" data-bs-toggle="tooltip" data-bs-placement="left" title="Soma de imagens, frente e verso">
+                <div class="form-floating">
+                    <input class="form-control" type="number" name="offset-numero" id="offset-numero"
+                        placeholder="Quantidade de peças" min="1">
+                        
+                    <label for="offset-numero">
+                        Número de Páginas
+                        <i class="bi bi-info-circle"></i>
+                    </label>
+                </div>
+            </div>
+
+            <div class="col-auto mb-3 sm offset visually-hidden">
+                <div class="form-floating">
+                    <select class="form-select" name="offset-tipo" id="offset-tipo">
+                        <option value="lombada" selected>Folha de máquina</option>
+                        <option value="capadura">Dobrado</option>
+                        <option value="capaflexivel">Alceado</option>
+                        <option value="moleskine">Costurado</option>
+                        <option value="empastamento">Pronto refilado</option>
+                    </select>
+                    <label for="offset-tipo">Tipo de offset</label>
+                </div>
+            </div>
+
+
+            <div class="col-auto mb-3">
+                <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
             </div>
         </form>
     </section>
@@ -279,16 +392,17 @@
 
     <!-- CONTATO -->
     <div class="my-container social">
-        <a href="">
+        <a href="" target="_blank">
             <i class="fab fa-facebook"></i>
         </a>
-        <a href="">
+        <a href="" target="_blank">
             <i class="fab fa-instagram"></i>
         </a>
-        <a href="">
+        <a href="https://api.whatsapp.com/send?phone=5511947612402&text=Ol%C3%A1!%20Poderia%20me%20ajudar%3F"
+            target="_blank">
             <i class="fab fa-whatsapp"></i>
         </a>
-        <a href="">
+        <a href="mailto:dobragraf@dobragraf.com.br" target="_blank">
             <i class="far fa-envelope"></i>
         </a>
     </div>

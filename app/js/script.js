@@ -49,6 +49,16 @@ $("select[name=servico]").change(function () {
   }
 });
 
+$("input[name=offset]").change(function(){
+  const isChecked = $(this).prop("checked")
+
+  if(isChecked){
+    $(".offset").removeClass("visually-hidden")
+  } else{
+    $(".offset").addClass("visually-hidden")
+  }
+})
+
 $("#form-orcamento").submit(function (e) {
   e.preventDefault();
 
