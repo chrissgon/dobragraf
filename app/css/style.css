@@ -537,7 +537,7 @@
 
     /* NAV */
     .nav {
-        display: none;
+        display: none!important;
     }
 
     .mobile {
