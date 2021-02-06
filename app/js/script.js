@@ -59,6 +59,16 @@ $("input[name=offset]").change(function(){
   }
 })
 
+$("#form-impressao").change(function(){
+  const isDigital = $(this).val() == "D"
+
+  if(isDigital){
+    $(".tipo-folha").removeClass("visually-hidden")
+  } else{
+    $(".tipo-folha").addClass("visually-hidden")
+  }
+})
+
 $("#form-orcamento").submit(function (e) {
   e.preventDefault();
 
