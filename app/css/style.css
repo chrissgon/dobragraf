@@ -111,6 +111,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    font-size: 25px;
     background: #eeeeee;
     border-radius: 100px;
     cursor: pointer;
@@ -131,7 +132,7 @@
 
 .mobile .tabs .tab {
     width: 100%;
-    color: var(--darkBlue);
+    color: var(--darkBlue)!important;
     font-size: 1.1rem;
     padding: 15px 0 15px 20px;
 }
