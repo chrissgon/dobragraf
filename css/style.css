@@ -507,6 +507,13 @@
 @media (max-width: 1000px) {
   /* HOME */
   /* main */
+  .home .main {
+    align-items: center;
+  }
+
+  .home .main .logo {
+    margin-left: 0;
+  }
   .home .main .title {
     font-size: 2rem;
   }
