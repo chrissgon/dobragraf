@@ -165,12 +165,12 @@
   width: 60%;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
 .home .main .logo {
-  max-width: 250px;
+  max-height: 250px;
   margin-top: -100px;
-  margin-left: -50px;
 }
 
 .home .main .title {
@@ -511,9 +511,6 @@
     align-items: center;
   }
 
-  .home .main .logo {
-    margin-left: 0;
-  }
   .home .main .title {
     font-size: 2rem;
   }
