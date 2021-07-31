@@ -1,6 +1,13 @@
 servicos = {
   // lombada
-  lombada: `+ Simples; varia de duas principais formas: colado e costurado, tendo opções colado em hotmelt /PUR e costurado costura + hotmelt e costura + PUR.
+  lombada: `
+  <p>+ Simples;</p>
+  <p>Possui duas principais formas:</p>
+
+  <ul>
+    <li>Costurado com cola Hotmelt ou PUR, esta determinada por escolha e necessidade do cliente;</li>
+    <li>Apenas colado, sem costura.</li>
+  </ul>
 
   <p></p>
   <small><em>
@@ -8,7 +15,16 @@ servicos = {
   </em></small>
   `,
   // capadura
-  capadura: `+ Robusto; 9 de 10 casos é feito com a lombada quadrada, porém há algumas opções tais como lombada arredondada, cantos arredondados, almofadado e etc.
+  capadura: `
+  <p>+ Robusta;</p>
+  <p>9 de 10 casos são feitos com a lombada quadrada, entretanto, existem outras opções. São elas:</p>
+
+  <ul>
+    <li>Lombada arredondada;</li>
+    <li>Cantos arredondados;</li>
+    <li>Almofadada;</li>
+    <li>Etc.</li>
+  </ul>
 
   <p></p>
   <small><em>
@@ -17,7 +33,8 @@ servicos = {
   `,
 
   // capaflexivel
-  capaflexivel: `Similar ao capa dura; não há papelão em sua estrutura.
+  capaflexivel: `
+  <p>Bastante similar ao tipo capa dura; sendo seu maior diferencial não possuir papelão em sua estrutura.</p>
   
   <p></p>
   <small><em>
@@ -26,7 +43,16 @@ servicos = {
   `,
 
   // moleskine
-  moleskine: `O mais dos modernos caderninhos de anotação; estruturalmente similar ao capa dura, porém, de praxe, com seus cantos arredondados, marca página e elástico para mantê-lo bem firme. Produto prático e durável. Opções são permitidas. 
+  moleskine: `
+  <p>O mais moderno dos caderninhos de anotação, sendo este um tipo de capa dura ao qual geralmente contém:</p>
+
+  <ul>
+    <li>Cantos arredondados;</li>
+    <li>Marca página;</li>
+    <li>Elástico para mantê-lo bem firme.</li>
+  </ul>
+
+  <p>Produto prático e durável. Opções são permitidas.</p>
   
   <p></p>
   <small><em>
@@ -35,5 +61,22 @@ servicos = {
   `,
 
   // empastamento
-  empastamento: `Gama variada de empastamentos com papelão a quente: jogo (ou placa) de capa e contra capa, base de calendário, móbiles, tags, pasta catálogo, montagem de capa com lombada, etc.`,
+  empastamento: `
+  <p>Existe uma variada gama de empastamentos com papelão a quente, são eles:</p>
+
+  <ul>
+    <li>Jogo (ou placa) de capa e contra capa;</li>
+    <li>Base de calendário;</li>
+    <li>Móbiles;</li>
+    <li>Tags;</li>
+    <li>Pasta catálogo;</li>
+    <li>Montagem de capa com lombada;</li>
+    <li>Etc.</li>
+  </ul>
+  
+  <p></p>
+  <small><em>
+  * Temos condições de trabalhar com impressos a partir de folha de máquina.
+  </em></small>
+  `,
 };
